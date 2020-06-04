@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">zadatak1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Home</string>
+    <string name="top_artists">Top Artists</string>
+    <string name="top_tracks">Top Tracks</string>
+    <string name="search">Search</string>
+    <string name="artists">Top Artists</string>
+    <string name="tracks">Top Tracks</string>
+    <string name="networkFailed">Network source not reachable</string>
+    <string name="networkSuccess">Network successful</string>
+    <string name="apiKey">2123b8e156db10ac7a5065fad9c01b8e</string>
+    <string name="track_name">Track Name:</string>
+    <string name="artist">Artist:</string>
+    <string name="play_count">Play Count:</string>
+    <string name="listeners">Listeners:</string>
+    <string name="artist_name">Artist name:</string>
+    <string name="placeholder">placeholder</string>
+</resources>

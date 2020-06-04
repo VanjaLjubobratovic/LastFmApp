@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureBlack"
+    tools:context=".Home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="2pt"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5pt"
+            android:layout_marginBottom="50pt"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/Home"
+            android:textColor="@color/lastFmRed"
+            android:textSize="23pt"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/artistsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50pt"
+            android:layout_marginHorizontal="5pt"
+            android:layout_marginBottom="15pt"
+            android:text="@string/top_artists"
+            android:textAllCaps="false"
+            android:textSize="12pt" />
+
+        <Button
+            android:id="@+id/tracksBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50pt"
+            android:layout_marginHorizontal="5pt"
+            android:layout_marginBottom="15pt"
+            android:text="@string/top_tracks"
+            android:textAllCaps="false"
+            android:textSize="12pt" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50pt"
+            android:layout_marginHorizontal="5pt"
+            android:layout_marginBottom="15pt"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

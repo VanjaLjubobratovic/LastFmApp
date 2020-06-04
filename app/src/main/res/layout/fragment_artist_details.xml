@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureBlack"
+    tools:context=".ArtistDetails.ArtistDetailsFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5pt"
+            android:layout_marginBottom="25pt"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/placeholder"
+            android:textColor="@color/lastFmRed"
+            android:textSize="23pt"
+            android:textStyle="italic" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/artistDetailsImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/textView"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/artistTracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/artistDetailsImage"
+            android:layout_below="@id/textView"
+            android:text="@string/tracks"
+            android:textColor="@color/lastFmRed"
+            android:textSize="12pt"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/artistData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artistDetailsImage"
+            android:textColor="@color/lastFmRed"
+            android:textSize="10pt"
+            android:layout_marginHorizontal="5dp"/>
+
+
+</RelativeLayout>

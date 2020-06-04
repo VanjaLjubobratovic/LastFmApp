@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pureBlack"
+    android:id="@+id/trackItemParentLayout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/trackImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/trackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/track_name"
+        android:textColor="@color/lastFmRed"
+        android:textSize="10pt"
+        android:layout_toEndOf="@id/trackImage"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/trackArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/artist"
+        android:textColor="@color/lastFmRed"
+        android:textSize="10pt"
+        android:layout_toEndOf="@id/trackImage"
+        android:layout_below="@id/trackName"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/trackPlayCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/play_count"
+        android:textColor="@color/lastFmRed"
+        android:textSize="10pt"
+        android:layout_below="@id/trackArtist"
+        android:layout_toEndOf="@id/trackImage"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/trackListeners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/listeners"
+        android:textColor="@color/lastFmRed"
+        android:textSize="10pt"
+        android:layout_toEndOf="@id/trackImage"
+        android:layout_below="@id/trackPlayCount"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

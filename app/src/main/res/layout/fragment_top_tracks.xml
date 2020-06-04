@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topTracksParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureBlack"
+    tools:context=".TopTracks.TopTracksFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5pt"
+            android:layout_marginBottom="25pt"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/tracks"
+            android:textColor="@color/lastFmRed"
+            android:textSize="23pt"
+            android:textStyle="italic" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topTracksRecyclerView"
+            android:layout_below="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</RelativeLayout>
