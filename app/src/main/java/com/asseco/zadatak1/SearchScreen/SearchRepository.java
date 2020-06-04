@@ -27,7 +27,6 @@ public class SearchRepository {
     public MutableLiveData<ArtistSearchModel> getArtist(String query) {
         setArtist(query);
 
-        while(dataSet == null);
         data.setValue(dataSet);
         return data;
     }
